@@ -10,12 +10,9 @@ taxonomies:
 
 menu:
     main:
-        - name: Papers
+        - name: CV
           url: papers/
-          weight: 2
-        - name: Courses
-          url: courses/
-          weight: 3
+          weight: 1
 
 
 params:
@@ -34,7 +31,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["books","courses","papers","data"]
+    MainSections: ["papers"]
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
@@ -50,14 +47,10 @@ params:
           imageWidth: 160
           imageHeight: 160
           buttons:
-            - name: Papers
+            - name: CV
               url: papers/
-            - name: Courses
-              url: courses/
 
     socialIcons:
-        - name: CV
-          url: cv.pdf
         - name: Email
           url: mailto:rooj95aa@gmail.com
 
