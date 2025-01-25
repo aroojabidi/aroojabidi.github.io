@@ -46,6 +46,8 @@ params:
           url: mailto:rooj95aa@gmail.com
         - name: CV
           url: https://www.overleaf.com/read/zzkjzshbpbfx#a193a4
+        - name: linkedin
+          url: https://www.linkedin.com/in/arooj-abidi-641122193/
 
     assets:
         disableScrollBarStyle: true
