@@ -40,9 +40,6 @@ params:
           imageUrl: "arooj.jpg"
           imageWidth: 160
           imageHeight: 160
-          buttons:
-            - name: CV
-              url: papers/
 
     socialIcons:
         - name: Email
