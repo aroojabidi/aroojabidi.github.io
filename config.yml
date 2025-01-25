@@ -10,9 +10,6 @@ taxonomies:
 
 menu:
     main:
-        - name: CV
-          url: papers/
-          weight: 1
 
 
 params:
@@ -53,6 +50,8 @@ params:
     socialIcons:
         - name: Email
           url: mailto:rooj95aa@gmail.com
+        - name: CV
+          url: https://www.overleaf.com/read/zzkjzshbpbfx#a193a4
 
     assets:
         disableScrollBarStyle: true
