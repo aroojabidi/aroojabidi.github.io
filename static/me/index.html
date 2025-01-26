@@ -13,7 +13,7 @@
     <div class="reveal">
         <div class="slides">
             <!-- About Me Slide -->
-            <section style="text-align: left; background-image: url('background-vcu.jpg'); background-size: cover; background-opacity: 0.1;">
+            <section style="text-align: left; background-image: url('background-vcu.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; background-color: rgba(0, 0, 0, 0.5); color: white;">
                 <h3>About Me</h3>
                 <p><strong>Name:</strong> Arooj Abidi</p>
                 <p><strong>Education:</strong></p>
@@ -78,31 +78,29 @@
             <!-- Future Work Slide -->
             <section>
                 <h3>Future Work</h3>
-                <div data-auto-animate>
-                    <div class="future-slide">
-                        <h4>Cancer Health Disparities</h4>
-                        <p>Developing evidence-based interventions to reduce cancer disparities in underserved populations.</p>
-                    </div>
-                    <div class="future-slide">
-                        <h4>Advanced Research Methods</h4>
-                        <p>Applying machine learning and statistical models to epidemiological studies.</p>
-                        <p>Exploring novel biomarkers for early cancer detection and prevention.</p>
-                    </div>
-                    <div class="future-slide">
-                        <h4>Community-Based Research</h4>
-                        <p>Engaging in participatory research to understand community needs.</p>
-                        <p>Designing targeted public health programs for better health outcomes.</p>
-                    </div>
-                </div>
+                <section>
+                    <h4>Cancer Health Disparities</h4>
+                    <p>Developing evidence-based interventions to reduce cancer disparities in underserved populations.</p>
+                </section>
+                <section>
+                    <h4>Advanced Research Methods</h4>
+                    <p>Applying machine learning and statistical models to epidemiological studies.</p>
+                    <p>Exploring novel biomarkers for early cancer detection and prevention.</p>
+                </section>
+                <section>
+                    <h4>Community-Based Research</h4>
+                    <p>Engaging in participatory research to understand community needs.</p>
+                    <p>Designing targeted public health programs for better health outcomes.</p>
+                </section>
             </section>
 
             <!-- Thank You Slide -->
             <section data-transition="zoom">
                 <h3>Thank You!</h3>
                 <p>Contact Information:</p>
-                <ul>
-                    <li><strong>Email:</strong> <a href="mailto:abidi.arooj@gmail.com">abidi.arooj@gmail.com</a></li>
-                    <li><strong>Website:</strong> <a href="https://example.com">https://example.com</a></li>
+                <ul style="list-style: none;">
+                    <li><img src="https://via.placeholder.com/24?text=@" alt="Email Icon" style="vertical-align: middle;"> <a href="mailto:abidi.arooj@gmail.com">abidi.arooj@gmail.com</a></li>
+                    <li><img src="https://via.placeholder.com/24?text=W" alt="Website Icon" style="vertical-align: middle;"> <a href="https://example.com">https://example.com</a></li>
                 </ul>
                 <p><img src="https://via.placeholder.com/100" alt="Thank You Icon"></p>
             </section>
@@ -114,7 +112,9 @@
         Reveal.initialize({
             transition: 'slide', // Default transition style
             transitionSpeed: 'fast', // Transition speed
-            autoAnimate: true // Enable auto-animate for smoother transitions
+            backgroundTransition: 'fade', // Smooth background transitions
+            parallaxBackgroundImage: 'background-vcu.jpg',
+            parallaxBackgroundSize: 'cover' // Ensure background image covers the slide
         });
     </script>
 </body>
