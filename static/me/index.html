@@ -21,113 +21,99 @@
                      data-background-size="cover"
                      data-background-position="center"
                      data-background-opacity="0.1"
-                     style="text-align: left; color: white;">
+                     style="text-align: center; color: white;">
                 <h3>About Me</h3>
                 <p><strong>Name:</strong> Arooj Abidi</p>
-                <p><strong>Education:</strong></p>
-                <ul>
+                <h3>Education</h3>
+                <ul style="display: inline-block; text-align: left;" id="education-section">
                     <li>MPH in Cancer Health Equity Science at VCU</li>
                     <li>MBBS at Riphah International University, Pakistan</li>
                 </ul>
-                <p><strong>Technical Skills:</strong></p>
-                <ul>
-                    <li>Statistical Analysis: R, SPSS, STATA, ATLAS.ti</li>
-                    <li>Data Visualization: Tableau, ggplot2</li>
-                    <li>Research Tools: PubMed, EndNote, Zotero</li>
-                </ul>
-            </section>
-
-            <!-- Research Interests Slide -->
-            <section data-transition="convex">
+                <button onclick="transitionEducation()">Transition to Research Interests</button>
                 <h3>Research Interests</h3>
-                <div style="display: flex; align-items: center;">
-                    <div style="flex: 1;">
-                        <ul>
-                            <li>Immunology</li>
-                            <li>Cancer Immunotherapy</li>
-                            <li>Cancer Prevention</li>
-                        </ul>
-                    </div>
-                    <div style="flex: 1; text-align: right;">
-                        <!-- Replace with your own image -->
-                        <img src="https://via.placeholder.com/300" alt="Research Interests Image">
-                    </div>
-                </div>
-                <!-- Speaker notes example (optional) -->
-                <aside class="notes">
-                    Mention specific papers or labs that sparked your interest.
-                </aside>
-            </section>
-
-            <!-- Maryland’s Maternal and Child Health Needs Assessment Slide -->
-            <section data-transition="fade">
-                <h3>Maryland’s Maternal and Child Health Needs Assessment Project</h3>
-                <div style="display: flex; align-items: center;">
-                    <div style="flex: 1;">
-                        <ul>
-                            <li>Analyzed data by cleaning transcripts, coding, and creating codebooks.</li>
-                            <li>Assisted with planning and coordinated logistics for outreach sessions.</li>
-                            <li>Attended inter-agency meetings and community engagement sessions.</li>
-                        </ul>
-                    </div>
-                    <div style="flex: 1; text-align: right;">
-                        <!-- Replace with your own image -->
-                        <img src="https://via.placeholder.com/300" alt="Project Image">
-                    </div>
-                </div>
-            </section>
-
-            <!-- Colorectal Cancer Mortality Disparities Research Slide -->
-            <section data-transition="slide">
-                <h3>Colorectal Cancer Mortality Disparities Research</h3>
-                <div style="display: flex; align-items: center;">
-                    <div style="flex: 1;">
-                        <p>Investigating disparities in CRC mortality across Virginia.</p>
-                        <p>Working under the guidance of Dr. Roy Sabo and Dr. Alex Krist at VCU.</p>
-                    </div>
-                    <div style="flex: 1; text-align: right;">
-                        <!-- Replace with your own image -->
-                        <img src="https://via.placeholder.com/300" alt="Colorectal Cancer Image">
-                    </div>
-                </div>
-            </section>
-
-            <!-- Future Work Slide (Nested Vertical Slides) -->
-            <section>
-                <h3>Future Work</h3>
-                <!-- Nested vertical slides -->
-                <section>
-                    <h4>Cancer Health Disparities</h4>
-                    <p>Developing evidence-based interventions to reduce cancer disparities in underserved populations.</p>
-                </section>
-                <section>
-                    <h4>Advanced Research Methods</h4>
-                    <p>Applying machine learning and statistical models to epidemiological studies.</p>
-                    <p>Exploring novel biomarkers for early cancer detection and prevention.</p>
-                </section>
-                <section>
-                    <h4>Community-Based Research</h4>
-                    <p>Engaging in participatory research to understand community needs.</p>
-                    <p>Designing targeted public health programs for better health outcomes.</p>
-                </section>
-            </section>
-
-            <!-- Thank You Slide -->
-            <section data-transition="zoom">
-                <h3>Thank You!</h3>
-                <p>Contact Information:</p>
-                <ul style="list-style: none;">
-                    <li>
-                        <!-- Real icon for email -->
-                        <i class="fas fa-envelope" style="vertical-align: middle;"></i>
-                        <a href="mailto:abidi.arooj@gmail.com">abidi.arooj@gmail.com</a>
-                    </li>
-                    <li>
-                        <!-- Real icon for website -->
-                        <i class="fas fa-globe" style="vertical-align: middle;"></i>
-                        <a href="https://example.com" target="_blank">example.com</a>
-                    </li>
+                <ul id="research-interests" style="display: none; text-align: left;">
+                    <li>Cancer disparities and equitable care</li>
+                    <li>Immunotherapy and biomarkers</li>
+                    <li>Translational applications in cancer prevention</li>
                 </ul>
+                <h3 id="research-statement-title" style="display: none;">Research Statement</h3>
+                <p id="research-statement" style="display: none; max-width: 800px; margin: auto;">
+                    My goal is to identify and address disparities in cancer care by bridging basic science with clinical applications to ensure that innovations reach underserved populations effectively.
+                </p>
+            </section>
+
+            <!-- Current Projects Slide -->
+            <section>
+                <h3>Current Projects</h3>
+                <!-- Sub-slide 1 -->
+                <section>
+                    <h4>Project No. 1</h4>
+                    <p><strong>Title:</strong> Maryland’s Maternal and Child Health Needs Assessment</p>
+                    <p><strong>Objective:</strong> Address gaps in maternal and child health services for diverse communities</p>
+                    <p><strong>Contributions:</strong></p>
+                    <ul>
+                        <li>Data cleaning, coding, and codebook creation</li>
+                        <li>Community outreach planning and coordination</li>
+                    </ul>
+                    <p><strong>Significance:</strong> Insights into health disparities that inform policy and practice</p>
+                </section>
+                <!-- Sub-slide 2 -->
+                <section>
+                    <h4>Project No. 2</h4>
+                    <p><strong>Title:</strong> Disparities in Colorectal Cancer Mortality in Virginia</p>
+                    <p><strong>Objective:</strong> Identify factors contributing to regional mortality disparities</p>
+                    <p><strong>Contributions:</strong></p>
+                    <ul>
+                        <li>Data analysis under mentorship of Dr. Roy Sabo and Dr. Alex Krist</li>
+                        <li>Developing recommendations for targeted interventions</li>
+                    </ul>
+                    <p><strong>Significance:</strong> Translating data insights into actionable health equity strategies</p>
+                </section>
+                <!-- Sub-slide 3 -->
+                <section>
+                    <h4>Project No. 3</h4>
+                    <p><strong>Title:</strong> Significance of High Sensitivity Trop I in Screening Cardiac Causes of Chest Pain in Emergency Setting</p>
+                    <p><strong>Objective:</strong> Evaluate the sensitivity and specificity of High Sensitivity Trop I for cardiac diagnoses</p>
+                    <p><strong>Contributions:</strong></p>
+                    <ul>
+                        <li>Conducted a prospective diagnostic accuracy study at Quaid-e-Azam International Hospital</li>
+                        <li>Collected and analyzed data on Trop I levels in patients presenting with acute chest pain</li>
+                    </ul>
+                    <p><strong>Significance:</strong> Enhanced diagnostic accuracy in emergency settings for timely intervention</p>
+                </section>
+                <!-- Sub-slide 4 -->
+                <section>
+                    <h4>Project No. 4</h4>
+                    <p><strong>Title:</strong> Engaging with Dr. Victor Yazbeck on Lymphoma Research</p>
+                    <p><strong>Objective:</strong> Explore new research directions on racial disparities and lymphoma treatment outcomes</p>
+                    <p><strong>Contributions:</strong></p>
+                    <ul>
+                        <li>Recently attended a lecture by Dr. Victor Yazbeck on lymphomas and their treatment modalities</li>
+                        <li>Engaging with Dr. Yazbeck to develop new research directions</li>
+                        <li>Recent discussions on a paper addressing racial disparities in immune checkpoint inhibitor treatment and survival among patients</li>
+                    </ul>
+                    <p><strong>Significance:</strong> Exploring treatment disparities and advancing equity in lymphoma care</p>
+                </section>
+            </section>
+
+            <!-- Future Projects Slide -->
+            <section>
+                <h3>Future Projects</h3>
+                <p><strong>Title:</strong> Proposed Research Directions</p>
+                <ul>
+                    <li>Socioeconomic Factors and Immunotherapy Outcomes: Explore how socioeconomic disparities influence the efficacy of cancer immunotherapy, with a focus on biomarkers.</li>
+                    <li>Precision Prevention in Underserved Populations: Develop predictive models integrating genetic and environmental factors to improve early detection in high-risk groups.</li>
+                    <li>Translational Science in Global Health: Adapt cancer prevention and care innovations to low-resource settings globally.</li>
+                </ul>
+            </section>
+
+            <!-- Why I Want to Pursue a PhD -->
+            <section>
+                <h3>Why I Want to Pursue a PhD</h3>
+                <h4>Personal Motivation and Vision</h4>
+                <p><strong>Story:</strong> My grandmother’s battle with breast cancer, complicated by rare metastasis to the esophagus, left a profound impression on me. Witnessing the advancements in cancer treatments that have significantly reduced mortality and morbidity inspired my commitment to this field. During my house job and emergency room experience, I encountered numerous cases of hepatitis B and C, and a rising prevalence of hepatocellular carcinoma (HCC). These experiences deepened my understanding of the urgent need for translational research to address both prevention and treatment gaps.</p>
+                <p><strong>Motivation:</strong> These personal and professional experiences drive my passion for advancing cancer care and ensuring equitable access to effective treatments.</p>
+                <p><strong>Vision:</strong> By pursuing a PhD, I aim to develop innovative solutions and foster collaborations that bridge research and equitable clinical care.</p>
             </section>
         </div>
     </div>
@@ -136,11 +122,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
     <script>
         Reveal.initialize({
-            // Overall transition for non-nested slides
             transition: 'slide',
-            // Possible transition speeds: default, fast, slow
             transitionSpeed: 'fast'
         });
+
+        function transitionEducation() {
+            document.getElementById('education-section').style.display = 'none';
+            document.getElementById('research-interests').style.display = 'block';
+            document.getElementById('research-statement-title').style.display = 'block';
+            document.getElementById('research-statement').style.display = 'block';
+        }
     </script>
 </body>
 
