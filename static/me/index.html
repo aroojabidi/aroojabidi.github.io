@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=1400, initial-scale=1.0" />
     <title>PhD Interview Slides</title>
     <!-- Reveal.js styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css" />
@@ -26,30 +26,37 @@
                 <h3>About Me</h3>
                 <h5>Arooj Abidi</h5>
 
-                <!-- First fragment: fades out when the second fragment appears -->
-                <div class="fragment fade-out">
-                    <p><strong>Education</strong></p>
-                    <ul style="display: inline-block; text-align: left;">
-                        <li>MPH in Cancer Health Equity Science, VCU (2024 - Present)</li>
-                        <li>MBBS, Riphah International University, Pakistan (2014 - 2020)</li>
-                    </ul>
-                </div>
+                <!-- Container that stacks fragments in the same position -->
+                <div style="position: relative; width: 60%; margin: 0 auto; min-height: 220px;">
 
-                <!-- Second fragment: fades in -->
-                <div class="fragment fade-in">
-                    <p><strong>Research Interests</strong></p>
-                    <ul style="display: inline-block; text-align: left;">
-                        <li>Cancer disparities and equitable care</li>
-                        <li>Immunotherapy and biomarkers</li>
-                        <li>Translational applications in cancer prevention</li>
-                    </ul>
+                    <!-- First fragment (fade-out) -->
+                    <div class="fragment" data-fragment-index="1" data-fragment-out="fade-out"
+                         style="position: absolute; top: 0; left: 0; width: 100%;">
+                        <p><strong>Education</strong></p>
+                        <ul style="display: inline-block; text-align: left;">
+                            <li>MPH in Cancer Health Equity Science, VCU (2024 - Present)</li>
+                            <li>MBBS, Riphah International University, Pakistan (2014 - 2020)</li>
+                        </ul>
+                    </div>
 
-                    <p><strong>Research Statement</strong></p>
-                    <p style="margin: 0 auto; width: 60%;">
-                        My goal is to identify and address disparities in cancer care by bridging basic science with
-                        clinical
-                        applications to ensure that innovations reach underserved populations effectively.
-                    </p>
+                    <!-- Second fragment (fade-in), same index so they toggle in one step -->
+                    <div class="fragment" data-fragment-index="1" data-fragment-in="fade-in"
+                         style="position: absolute; top: 0; left: 0; width: 100%;">
+                        <p><strong>Research Interests</strong></p>
+                        <ul style="display: inline-block; text-align: left;">
+                            <li>Cancer disparities and equitable care</li>
+                            <li>Immunotherapy and biomarkers</li>
+                            <li>Translational applications in cancer prevention</li>
+                        </ul>
+
+                        <p><strong>Research Statement</strong></p>
+                        <p style="margin: 0 auto; width: 60%;">
+                            My goal is to identify and address disparities in cancer care by bridging basic science
+                            with clinical applications to ensure that innovations reach underserved populations
+                            effectively.
+                        </p>
+                    </div>
+
                 </div>
             </section>
 
@@ -59,17 +66,15 @@
                 <h3>Current Projects</h3>
             </section>
 
-
             <!-- Current Project 1 -->
-            <section data-transition="fade">
+            <section data-transition="fade" data-align="center" style="width: 100%; max-width: 1400px; margin: 0 auto;">
                 <h4 style="text-align: center;">Disparities in Colorectal Cancer Mortality in Virginia</h4>
-                <div style="display: flex; flex-wrap: nowrap; align-items: flex-start; gap: 20px; margin-top: 20px;">
+                <div style="display: flex; flex-wrap: nowrap; align-items: flex-start; gap: 20px; margin-top: 20px; justify-content: center;">
 
-                    <!-- Text Content on the Left -->
-                    <div style="flex: 1; min-width: 0;">
+                    <!-- Text Content -->
+                    <div style="flex: 1; min-width: 0; text-align: left;">
                         <p><strong>Objective:</strong> Identify factors contributing to regional mortality disparities</p>
-                        <p><strong>Significance:</strong> Translating data insights into actionable health equity strategies
-                        </p>
+                        <p><strong>Significance:</strong> Translating data insights into actionable health equity strategies</p>
                         <p><strong>Contributions:</strong></p>
                         <ul>
                             <li>Data analysis under mentorship of Dr. Roy Sabo and Dr. Alex Krist</li>
@@ -77,27 +82,25 @@
                         </ul>
                     </div>
 
-                    <!-- Figure on the Right -->
-                    <div style="flex: 1; text-align: center; min-width: 0;">
-                        <img src="crc-workflow.png" alt="Colorectal Cancer Disparities"
+                    <!-- Figure (centered) -->
+                    <div style="flex: 1; min-width: 0; text-align: center;">
+                        <img src="crc-workflow.png"
+                             alt="Colorectal Cancer Disparities"
                              style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 5px;" />
-                        <p style="font-size: 0.9em; margin-top: 10px;">Figure: Regional disparities in colorectal cancer
-                            mortality</p>
+                        <!-- Removed figure caption as requested -->
                     </div>
                 </div>
             </section>
 
             <!-- Current Project 2 -->
-            <section data-transition="fade">
+            <section data-transition="fade" data-align="center" style="width: 100%; max-width: 1400px; margin: 0 auto;">
                 <h4 style="text-align: center;">Maryland’s Maternal and Child Health Needs Assessment</h4>
-                <div style="display: flex; flex-wrap: nowrap; align-items: flex-start; gap: 20px; margin-top: 20px;">
+                <div style="display: flex; flex-wrap: nowrap; align-items: flex-start; gap: 20px; margin-top: 20px; justify-content: center;">
 
-                    <!-- Text Content on the Left -->
-                    <div style="flex: 1; min-width: 0;">
-                        <p><strong>Objective:</strong> Address gaps in maternal and child health services for diverse
-                            communities</p>
-                        <p><strong>Significance:</strong> Insights into health disparities that inform policy and practice
-                        </p>
+                    <!-- Text Content -->
+                    <div style="flex: 1; min-width: 0; text-align: left;">
+                        <p><strong>Objective:</strong> Address gaps in maternal and child health services for diverse communities</p>
+                        <p><strong>Significance:</strong> Insights into health disparities that inform policy and practice</p>
                         <p><strong>Contributions:</strong></p>
                         <ul>
                             <li>Data cleaning, coding, and codebook creation</li>
@@ -105,23 +108,21 @@
                         </ul>
                     </div>
 
-                    <!-- Figure on the Right -->
-                    <div style="flex: 1; text-align: center; min-width: 0;">
-                        <img src="mdh-workflow.png" alt="Health Needs Assessment Figure"
+                    <!-- Figure (centered) -->
+                    <div style="flex: 1; min-width: 0; text-align: center;">
+                        <img src="mdh-workflow.png"
+                             alt="Health Needs Assessment Figure"
                              style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 5px;" />
-                        <p style="font-size: 0.9em; margin-top: 10px;">Overall Workflow</p>
+                        <!-- Removed figure caption as requested -->
                     </div>
                 </div>
             </section>
 
-
             <!-- Current Project 3 -->
-            <section data-transition="fade" data-align="center">
+            <section data-transition="fade" data-align="center" style="width: 100%; max-width: 1400px; margin: 0 auto;">
                 <h4>Significance of High Sensitivity Trop I in Screening Cardiac Causes of Chest Pain</h4>
-                <p><strong>Objective:</strong> Evaluate sensitivity and specificity of High Sensitivity Trop I for
-                    cardiac diagnoses</p>
-                <p><strong>Significance:</strong> Enhanced diagnostic accuracy in emergency settings for timely
-                    intervention</p>
+                <p><strong>Objective:</strong> Evaluate sensitivity and specificity of High Sensitivity Trop I for cardiac diagnoses</p>
+                <p><strong>Significance:</strong> Enhanced diagnostic accuracy in emergency settings for timely intervention</p>
                 <p><strong>Contributions:</strong></p>
                 <ul style="text-align: left; display: inline-block;">
                     <li>Conducted a prospective diagnostic accuracy study at Quaid-e-Azam International Hospital</li>
@@ -130,33 +131,27 @@
             </section>
 
             <!-- Current Project 4 -->
-            <section data-transition="fade" data-align="center">
+            <section data-transition="fade" data-align="center" style="width: 100%; max-width: 1400px; margin: 0 auto;">
                 <h4>Lymphoma Research</h4>
                 <ul style="text-align: left; display: inline-block;">
-                    <li>Recently, attended a lecture by Dr. Victor Yazbeck on lymphomas and their treatment modalities
-                    </li>
-                    <li>Discussed new research directions addressing racial disparities in immune checkpoint inhibitor
-                        treatment and survival</li>
+                    <li>Recently, attended a lecture by Dr. Victor Yazbeck on lymphomas and their treatment modalities</li>
+                    <li>Discussed new research directions addressing racial disparities in immune checkpoint inhibitor treatment and survival</li>
                     <li>Goal is to explore treatment disparities and advance equity in lymphoma care</li>
                 </ul>
             </section>
 
             <!-- Future Projects Slide -->
-            <section data-align="center">
+            <section data-align="center" style="width: 100%; max-width: 1400px; margin: 0 auto;">
                 <h3>High-level Ideas That I Would Like To Pursue</h3>
                 <ol style="text-align: left; display: inline-block;">
-                    <li>Examine how socioeconomic disparities influence immunotherapy efficacy, with a focus on biomarkers.
-                    </li>
-                    <li>Develop predictive models integrating genetic and environmental factors to improve early
-                        detection in high-risk groups.
-                    </li>
-                    <li>Adapt cancer prevention and care innovations to low-resource settings globally.
-                    </li>
+                    <li>Examine how socioeconomic disparities influence immunotherapy efficacy, with a focus on biomarkers.</li>
+                    <li>Develop predictive models integrating genetic and environmental factors to improve early detection in high-risk groups.</li>
+                    <li>Adapt cancer prevention and care innovations to low-resource settings globally.</li>
                 </ol>
             </section>
 
             <!-- Why I Want to Pursue a PhD -->
-            <section data-align="center">
+            <section data-align="center" style="width: 100%; max-width: 1400px; margin: 0 auto;">
                 <h2>Why I Want to Pursue a PhD</h2>
                 <ul style="text-align: left; display: inline-block;">
                     <li>I want to pursue a faculty position in an R1 institution.</li>
@@ -189,10 +184,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
     <script>
         Reveal.initialize({
+            // Increase these dimensions for a broader slide width
+            width: 1400,
+            height: 900,
+            margin: 0,
             transition: 'slide',
             transitionSpeed: 'fast'
         });
     </script>
 </body>
-
 </html>
